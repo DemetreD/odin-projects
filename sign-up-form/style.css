@@ -13,3 +13,55 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: sans-serif;
+}
+
+.img-section {
+  display: block;
+  position: relative;
+  width: 35%;
+  min-height: 100vh;
+  background-image: url("./images/leaf-plant.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-title {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 0;
+}
+
+.section-title h1 {
+  font-family: "Skranji", system-ui;
+  color: #fff;
+  font-size: 3rem;
+  letter-spacing: 4px;
+}
+.odin-logo {
+  width: 80px;
+  height: 100px;
+}
+
+.img-by {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0.75rem 0;
+  color: #fff;
+}
+
+.img-by p > a {
+  color: #fff;
+}
