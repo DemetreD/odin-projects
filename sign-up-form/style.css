@@ -1,0 +1,15 @@
+:root {
+  --btn-color: #596d48;
+  --input-color: #e5e7eb;
+}
+
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
