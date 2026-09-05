@@ -21,7 +21,7 @@ body {
 .img-section {
   display: block;
   position: relative;
-  width: 35%;
+  width: 50%;
   min-height: 100vh;
   background-image: url("./images/leaf-plant.jpg");
   background-repeat: no-repeat;
@@ -65,3 +65,52 @@ body {
 .img-by p > a {
   color: #fff;
 }
+
+/* form */
+main {
+  display: flex;
+}
+
+.form-section {
+  background-color: #e5e7eb;
+}
+.section-text p {
+  font-size: 18px;
+}
+
+form {
+  background-color: #fff;
+  box-shadow: 0 4px 6px -3px #000;
+  /* margin-top: 10rem; */
+  padding: 1rem 2rem;
+}
+
+.form-title {
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+}
+.form-row {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-group input {
+  padding: 0.3rem;
+  border: 2px solid var(--input-color);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 0.15);
+}
+.input-group label {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+/* .container {
+  width: 900px;
+} */
