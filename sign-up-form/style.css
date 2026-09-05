@@ -21,7 +21,7 @@ body {
 .img-section {
   display: block;
   position: relative;
-  width: 50%;
+  width: 30%;
   min-height: 100vh;
   background-image: url("./images/leaf-plant.jpg");
   background-repeat: no-repeat;
@@ -72,19 +72,20 @@ main {
 }
 
 .form-section {
-  background-color: #e5e7eb;
+  background-color: #fafafa;
+  flex: 1;
 }
 .section-text p {
   font-size: 18px;
 }
 
-form {
+.form-block {
+  width: 100%;
   background-color: #fff;
   box-shadow: 0 4px 6px -3px #000;
-  /* margin-top: 10rem; */
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
 }
-
 .form-title {
   margin-bottom: 1.5rem;
 }
@@ -101,16 +102,65 @@ form {
 }
 
 .input-group input {
-  padding: 0.3rem;
-  border: 2px solid var(--input-color);
+  padding: 0.4rem;
+  border: 1px solid var(--input-color);
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgb(0 0 0 / 0.15);
 }
 .input-group label {
   font-size: 0.7rem;
   font-weight: bold;
 }
 
-/* .container {
-  width: 900px;
-} */
+input:focus {
+  border: 1px solid blue;
+  outline: none;
+}
+
+input[type="password"]:user-valid {
+  border: 1px solid red;
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+}
+
+.section-description,
+.section-sub {
+  max-width: 60ch;
+  font-weight: 600;
+}
+
+.section-description {
+  margin-bottom: 1rem;
+}
+
+.section-text {
+  margin: 3rem auto 0;
+}
+
+.form-footer {
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+.submit-btn {
+  background-color: var(--btn-color);
+  border: none;
+  padding: 0.8rem 2.5rem;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-text {
+  margin-top: 1rem;
+  font-size: 15px;
+}
+.login-link {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: 600;
+}
